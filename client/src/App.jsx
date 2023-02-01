@@ -7,10 +7,12 @@ function App() {
 
   return (
 <BrowserRouter>
+
+
+<main className='bg-[url("../images/bg.svg")] bg-cover bg-no-repeat'>
 <Navbar />
-<main>
 <Routes>
-<Route path="/products" element={<ProductPage />}/>
+<Route path="/donuts" element={<ProductPage />}/>
 <Route path="/" element={<HomePage />} />
 </Routes>
 </main>

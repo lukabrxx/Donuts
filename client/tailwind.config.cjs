@@ -15,11 +15,14 @@ module.exports = {
     extend: {
       colors: {
         mainPink: "#e2619f",
-        mainPinkHoverButton: "#e44b8d",
+        mainPinkHoverButton: "#d24787",
         mainText: "#313131"
       },
       fontFamily: {
         navbar:  ['Itim', 'cursive']
+      },
+      backgroundImage: {
+        "bg": "url('../imges/bg.svg')"
       }
     },
   },

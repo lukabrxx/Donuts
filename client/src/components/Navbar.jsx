@@ -1,6 +1,7 @@
 import React,{ useState } from "react"
 import {BsFillBagFill} from "react-icons/bs"
 import Hamburger from 'hamburger-react'
+import {BsFacebook, BsInstagram, BsTwitter} from "react-icons/bs"
 const Navbar = () => {
   const [open, setOpen] = useState(false)
 
@@ -42,7 +43,13 @@ const Navbar = () => {
         {
           open && 
           <div className="absolute top-[50px]  h-[calc(100vh-50px)] w-[65%] right-0 z-10 shadow-xl bg-white/70 right-side__animation">
-          <ul className='flex flex-col gap-2 lg:gap-4 lg:pr-8 lg:py-2 pl-8 justify-start items-end mr-6 mt-12'>
+
+          <div className=" pt-4 flex justify-center items-center flex-col border-mainText border-b-[0.4px] border-dashed">
+        <img src="../images/astro.png" alt="astronaut"  className="w-[70px]"/>
+        <h2 className="text-mainText font-bold  text-xl mt-2 pb-4">Donut <span className="text-mainPink">Planet</span></h2>
+      </div>
+          
+          <ul className='flex flex-col gap-2   justify-start items-center  my-3 border-mainText border-b-[0.4px] border-dashed w-full'>
         <li className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3'>Home</li>
         <li className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3'>Weekly Menu</li>
         <li className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3'>About</li>
@@ -50,10 +57,13 @@ const Navbar = () => {
         <li className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3'>Login</li>
         <li className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3'>Sign Up</li>
       </ul>
-  
-      <div className=" pt-8 flex justify-center">
-        <img src="../images/astro.png" alt="astronaut"  className="w-[90px]"/>
-      </div>
+          
+          <div className="flex justify-center items-center py-2 gap-6">
+            <BsFacebook  className="text-mainPink px-2 w-10 h-10 "/>
+            <BsInstagram  className="text-mainPink px-2 w-10 h-10 "/>
+            <BsTwitter  className="text-mainPink px-2 w-10 h-10 "/>
+          </div>
+
           </div>
         }
       </div>

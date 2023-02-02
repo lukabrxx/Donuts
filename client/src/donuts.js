@@ -27,6 +27,15 @@ export const donuts = [
     stock: 10,  
 },
 {
+  _id: '721235e59540445b3sdfe7s0',
+  name: 'Monkey Balls',
+  image: '../images/donut4.png',
+  description:
+    "Bombig and Affengeil are our outstanding Bomb Donuts. Filled with delicious fillings and creative topping combinations, they are a pure taste explosion!",
+  price: 2.49,
+  stock: 10,  
+},
+{
   _id: '421235e59540445b3sdfe7s0',
   name: 'Cinnamon Sugar',
   image: '../images/donut5.png',

@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='hidden h-[70px] w-full  md:flex items-center justify-between lg:px-[80px] py-2 bg-transparent'>
+      <div className='hidden h-[70px] w-full  md:flex items-center justify-between lg:px-[80px] py-2 bg-white fixed top-0 z-[100]'>
 
         <div className='flex justify-between'>
         <Link to="/">
@@ -38,7 +38,7 @@ const Navbar = () => {
       </div>
 
       {/** MOBILE */}
-      <div className='h-[50px] w-full shadow-xl flex md:hidden justify-between items-center p-2 z-20 bg-white'>
+      <div className='h-[50px] w-full shadow-xl flex md:hidden justify-between items-center p-2 z-20 bg-white fixed'>
         
       <Link to="/" >
         <h2 className='font-navbar text-3xl font-extrabold  hover:text-mainPink cursor-pointer transition-all duration-500 ease-in-out'>D<span className='text-mainPink hover:text-mainText'>P</span> Shop</h2>
@@ -57,18 +57,18 @@ const Navbar = () => {
           
           <ul className='flex flex-col gap-2   justify-start items-center  my-3 border-mainText border-b-[0.4px] border-dashed w-full'>
     
-        <Link to="/donuts"><button onClick={closeHandler} className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3'>Donuts</button></Link>
-        <button onClick={closeHandler} className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3'>Week Special&apos;s</button>
-        <button onClick={closeHandler} className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3'>About</button>
-        <button onClick={closeHandler} className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3'>Visit us</button>
-        <button onClick={closeHandler} className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3'>Login</button>
-        <button onClick={closeHandler} className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3'>Sign up</button>
+        <Link to="/donuts"><button onClick={closeHandler} className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3 hover:text-mainText'>Donuts</button></Link>
+        <button onClick={closeHandler} className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3 hover:text-mainText'>Week Special&apos;s</button>
+        <button onClick={closeHandler} className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3 hover:text-mainText'>About</button>
+        <button onClick={closeHandler} className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3 hover:text-mainText'>Visit us</button>
+        <button onClick={closeHandler} className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3 hover:text-mainText'>Login</button>
+        <button onClick={closeHandler} className='cursor-pointer text-mainPink font-[700] text-[20px] tracking-wider mx-2 transition-all duration-500 ease-in-out xxl:text-lg py-3 hover:text-mainText'>Sign up</button>
       </ul>
           
           <div className="flex justify-center items-center py-2 gap-6">
-            <BsFacebook  className="text-mainPink px-2 w-10 h-10 "/>
-            <BsInstagram  className="text-mainPink px-2 w-10 h-10 "/>
-            <BsTwitter  className="text-mainPink px-2 w-10 h-10 "/>
+            <BsFacebook  className="text-mainPink px-2 w-10 h-10 cursor-pointer hover:text-mainText"/>
+            <BsInstagram  className="text-mainPink px-2 w-10 h-10 cursor-pointer hover:text-mainText"/>
+            <BsTwitter  className="text-mainPink px-2 w-10 h-10 cursor-pointer hover:text-mainText"/>
           </div>
 
           </div>

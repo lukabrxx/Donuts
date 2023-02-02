@@ -12,8 +12,8 @@ function App() {
 <main className='bg-[url("../images/bg.svg")] bg-cover bg-no-repeat'>
 <Navbar />
 <Routes>
-<Route path="/donuts" element={<ProductPage />}/>
 <Route path="/" element={<HomePage />} />
+<Route path="/donuts" element={<ProductPage />}/>
 </Routes>
 </main>
 </BrowserRouter>

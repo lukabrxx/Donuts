@@ -1,13 +1,17 @@
+//TODO wishlist when item on wishlist heart should be full (Ai from react-icons)
+
 import React from 'react'
 import PropTypes from 'prop-types'; 
 import {BsFillBagFill} from "react-icons/bs"
-import {AiOutlineArrowRight} from "react-icons/ai"
+import {AiOutlineArrowRight, AiOutlineHeart} from "react-icons/ai"
+
 const DonutCard = ({donut}) => {
     const {image,name,price} = donut
   return (
     <div className='w-[260px] h-[320px] flex flex-col bg-white/60 shadow-lg rounded-[16px]'>
-        <div className='flex justify-center items-center'>
+        <div className='flex justify-center items-center relative'>
             <img src={image} alt={name} className="w-[150px] pt-4"/>
+            <AiOutlineHeart  className='absolute top-4 right-4 text-mainText w-5 h-5 font-bold cursor-pointer'/>
         </div>
         <div className='h-full flex justify-start pt-4 flex-col items-center'>
             <h2 className='text-[18px] pt-2 font-[600]'>{name}</h2>

@@ -1,8 +1,9 @@
 import React from 'react'
+import DonutCard from '../components/DonutCard'
 
 const HomePage = () => {
   return (
-    <div>
+    <div className=''>
       HomePage
     </div>
   )

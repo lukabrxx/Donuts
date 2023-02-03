@@ -26,6 +26,6 @@ const DonutCard = ({donut}) => {
   )
 }
 DonutCard.propTypes  = {
-  donut: PropTypes.node,
+  donut: PropTypes.object,
 }
 export default DonutCard
